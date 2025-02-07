@@ -1,0 +1,269 @@
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+    flex-wrap: wrap;
+}
+
+.corpo{
+    width: 80%;
+    display: flex;
+    padding: 1vh 0;
+}
+
+.logo{
+    width: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.titulo{
+    width: 92%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2vh;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #1b5d1b;
+}
+
+.titulo p{
+    font-size: 1em; 
+    color: #1b5d1b;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.barra-superior{
+    width: 100%;
+    height: 2vh;
+    background-color: #d5d5d5;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nome-chamada{
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nome-chamada h1 {
+    color: #333;
+}
+
+.digite-nome{
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+#nome-chamada {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #1b5d1b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.nomeDestaque {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-inferior{
+    width: 100%;
+    background-color: #1b5d1b;
+    display: flex;
+    justify-content: center;
+}
+
+.img-footer{
+    width: 80%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 0; 
+}
+
+.img-footer img{
+    width: 7%;
+    padding-left: 93%;
+}
+
+.barra-inferior {
+    width: 100%;
+    height: 5vh;
+    background-color: #d5d5d5;
+}
+
+.barra-inferior p{
+    color:#5b5858;
+    text-align: center;
+    font-size: 1em;
+}
+
+/*FORMULÁRIO*/
+
+.formulario{
+    width: 100%;
+    padding: 2% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titulo-form{
+    color: #1b5d1b;
+    text-align: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome-form{
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+#nome-form {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.titulo-input p{
+    font-size: 1em;
+    font-weight: 500;
+    color: #ca3c3c;
+}
+
+.radio-item{
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"]{
+    accent-color: #1b5d1b;
+    border: 0px;
+    width: 10%;
+    height: 1.3em;
+}
+
+.enviar{
+    display: flex;
+    padding-top: 3vh;
+}
+
+
+@media (max-width: 720px) {
+    .titulo h1{
+        font-size: 1.5em;
+    }
+    .titulo p{
+        font-size: 1em;
+    }
+    body{
+        width: 100%;
+    }
+    .corpo{
+        width: 85%;
+    }
+    .logo{
+        width: 15%;
+    }
+    .img-footer{
+        height: 3vh;
+    }
+    .img-footer img{
+        width: 15%;
+        padding-left: 86%;
+    }
+    .barra-inferior{
+        height: 6vh;
+    }
+    .barra-inferior p{
+        font-size: 0.8em;
+    }
+    #submit{
+        margin-bottom: 6%;
+    }
+    
+}

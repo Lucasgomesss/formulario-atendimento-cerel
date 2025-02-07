@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Primeira Página</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/formulario.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="corpo">
+            <div class="logo">
+                <img src="img/logo-ifms.png" alt="Logo IFMS">
+            </div>
+            <div class="titulo">
+                <h1>Central de Relacionamento - CEREL</h1>
+                <p>INSTITUTO FEDERAL DE MATO GROSSO DO SUL</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="barra-superior"></div>
+        <div class="conteudo">
+            <div class="formulario">
+
+                <h2 id="titulo-form">Formulário de Atendimento da Central de Relacionamento</h2>
+
+                <form id="form" method="POST">
+
+                    <div class="nome-form">
+                        <h3>Informe seu nome:</h3>
+                        <input type="text" id="nome-form" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="radio-container">
+
+                        <div class="titulo-input">
+                            <h3>Você é:</h3>
+                            <p>Clique em uma das opções abaixo</p>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="estudante" name="tipo" value="Estudante" required>
+                            <label for="estudante">Estudante</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="servidor" name="tipo" value="servidor" required>
+                            <label for="servidor">Servidor</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="outro" name="tipo" value="Outro" required>
+                            <label for="outro">Público Externo</label>
+                        </div>
+
+                    </div>
+
+                    <div class="radio-container">
+
+                        <div class="titulo-input">
+                            <h3>Qual o atendimento desejado?</h3>
+                            <p>Clique em uma das opções abaixo</p>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="atestado-matricula" name="atendimento" value="Atestado de Matricula"
+                                required>
+                            <label for="atestado-matricula">Atestado de Matrícula</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="carteira" name="atendimento" value="Carteira Estudantil Estadual"
+                                required>
+                            <label for="carteira">Carteira Estudantil Estadual</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="certificacao" name="atendimento" value="Certificação Encceja/Enem"
+                                required>
+                            <label for="certificacao">Certificação Encceja/Enem</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="convalidacao" name="atendimento" value="Convalidação" required>
+                            <label for="convalidacao">Convalidação</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="cracha" name="atendimento" value="Crachá" required>
+                            <label for="cracha">Crachá</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="certificacao" name="atendimento" value="Desligamento" required>
+                            <label for="certificacao">Desligamento</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="diploma" name="atendimento" value="Diploma/Certificado" required>
+                            <label for="diploma">Diploma/Certificado</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="duvidas" name="atendimento" value="Dúvidas e/ou Informações"
+                                required>
+                            <label for="duvidas">Dúvidas e/ou Informações</label>
+
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="historico" name="atendimento" value="Histórico Escolar" required>
+                            <label for="historico">Histórico Escolar</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="inscricao" name="atendimento" value="Inscrição" required>
+                            <label for="inscricao">Inscrição</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="matricula" name="atendimento" value="Matrícula/Rematrícula"
+                                required>
+                            <label for="matricula">Matrícula/Rematrícula</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="regime-domiciliar" name="atendimento" value="Regime Domiciliar"
+                                required>
+                            <label for="regime-domiciliar">Regime Domiciliar</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="segunda" name="atendimento" value="Segunda Chamada" required>
+                            <label for="segunda">Segunda Chamada</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="sistema" name="atendimento" value="Sistema Acadêmico" required>
+                            <label for="sistema">Sistema Acadêmico</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="trancamento" name="atendimento" value="Trancamento" required>
+                            <label for="trancamento">Trancamento</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="tranferencia" name="atendimento" value="Transferência" required>
+                            <label for="tranferencia">Transferência</label>
+                        </div>
+
+                    </div>
+
+                    <div class="enviar">
+                        <button id="submit" type="submit" value="Enviar">Enviar</button>
+                    </div>
+                    
+                </form>
+
+                <div id="message" style="display: none; color: green; margin-top: 10px;">Dados enviados com sucesso!
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="logo-inferior">
+                <div class="img-footer">
+                    <img id="dois" src="img/logo-gov.png" alt="Logo do Governo Federal do Brasil">
+                </div>
+            </div>
+            <div class="barra-inferior">
+                <p>&copy; 2025 IFMS - Instituto Federal de Mato Grosso do Sul - Campus Dourados. Todos os direitos
+                    reservados.</p>
+            </div>
+        </footer>
+
+        <script src="js/formulario.js"></script>
+</body>
+
+</html>

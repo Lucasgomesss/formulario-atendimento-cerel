@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Primeira Página</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/primeira_pagina.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="corpo">
+      <div class="logo">
+        <img src="img/logo-ifms.png" alt="Logo IFMS">
+      </div>
+      <div class="titulo">
+        <h1>Central de Relacionamento - CEREL</h1>
+        <p>INSTITUTO FEDERAL DE MATO GROSSO DO SUL</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="barra-superior"></div>
+    <div class="conteudo">
+      <div class="nome-chamada">
+        <h1>Digite o nome a ser chamado</h1>
+        <div class="digite-nome">
+          <input type="text" id="nome-chamada" placeholder="Nome aqui">
+          <button onclick="enviarNome()">Enviar</button>
+        </div>
+
+        <p id="confirmation" style="color: green; display: none;">Nome enviado com sucesso!</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="logo-inferior">
+      <div class="img-footer">
+        <img src="img/logo-gov.png" alt="Logo do Governo Federal do Brasil">
+      </div>
+    </div>
+    <div class="barra-inferior">
+      <p>&copy; 2025 IFMS - Instituto Federal de Mato Grosso do Sul - Campus Dourados. Todos os direitos
+        reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
