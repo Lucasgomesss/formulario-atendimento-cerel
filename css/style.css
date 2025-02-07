@@ -235,13 +235,13 @@ input[type="radio"]{
 
 @media (max-width: 720px) {
     .titulo h1{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .titulo p{
-        font-size: 1em;
+        font-size: 0.9em;
     }
-    body{
-        width: 100%;
+    #titulo-form{
+        font-size: 1.3em;
     }
     .corpo{
         width: 85%;
