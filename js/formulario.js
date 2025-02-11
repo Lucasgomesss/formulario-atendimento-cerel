@@ -6,21 +6,21 @@ document.getElementById("form").addEventListener("submit", function (event) {
     submit.innerText = "Enviado...";
 
     let formData = new FormData(this);
-    fetch("https://script.google.com/macros/s/AKfycbwmSN7tsUvKQZKUWwDc7Xh9qGUF7zfp4xR9-ookMQtcl217SO32jFTbY6i7---0XEMB/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbz9_P-D1zKLgIRXX7FCzEFgkXwjTfa-r8Q4Rw7i0uQlBJqTaKxijI_uDg-aEoxzeof2/exec", {
         method: "POST",
         body: formData
     })
         .then(response => response.text())
         .then(data => {
             // Exibe uma mensagem de sucesso
-            document.getElementById("mensagem").style.display = "block";
+            document.getElementById("message").style.display = "block";
 
             // Limpa os campos do formulário
             document.getElementById("form").reset();
 
             // Após 3 segundos, esconde a mensagem de sucesso
             setTimeout(() => {
-                document.getElementById("mensagem").style.display = "none";
+                document.getElementById("message").style.display = "none";
             }, 4000);
 
             submit.disabled = false;
