@@ -1,5 +1,5 @@
 function enviarNome() {
-    const nome = document.getElementById("nameInput").value;
+    const nome = document.getElementById("nome-chamada").value;
     if (nome) {
         // Salva o nome no localStorage
         localStorage.setItem("nomeUsuario", nome);
@@ -8,7 +8,7 @@ function enviarNome() {
         document.getElementById("confirmation").style.display = "block";
 
         // Limpa o campo de input
-        document.getElementById("nameInput").value = "";
+        document.getElementById("nome-chamada").value = "";
 
         // Recarrega a página após 2 segundos para permitir o envio de outro nome
         setTimeout(function () {

@@ -229,12 +229,14 @@ input[type="radio"]{
 
 .enviar{
     display: flex;
-    padding-top: 3vh;
+    padding-top: 2vh; 
 }
 #mensagem{
     width: 100%;
+    padding-top: 0.1vh;
     text-align: center;
 }
+
 
 
 @media (max-width: 720px) {
