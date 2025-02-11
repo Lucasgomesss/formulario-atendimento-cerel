@@ -231,6 +231,10 @@ input[type="radio"]{
     display: flex;
     padding-top: 3vh;
 }
+#mensagem{
+    width: 100%;
+    text-align: center;
+}
 
 
 @media (max-width: 720px) {
