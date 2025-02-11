@@ -231,6 +231,7 @@ input[type="radio"]{
     display: flex;
     padding-top: 2vh; 
 }
+
 #mensagem{
     width: 100%;
     padding-top: 0.1vh;

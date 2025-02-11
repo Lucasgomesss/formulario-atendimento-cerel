@@ -13,14 +13,14 @@ document.getElementById("form").addEventListener("submit", function (event) {
         .then(response => response.text())
         .then(data => {
             // Exibe uma mensagem de sucesso
-            document.getElementById("message").style.display = "block";
+            document.getElementById("mensagem").style.display = "block";
 
             // Limpa os campos do formulário
             document.getElementById("form").reset();
 
             // Após 3 segundos, esconde a mensagem de sucesso
             setTimeout(() => {
-                document.getElementById("message").style.display = "none";
+                document.getElementById("mensagem").style.display = "none";
             }, 4000);
 
             submit.disabled = false;
